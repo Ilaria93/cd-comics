@@ -2,7 +2,7 @@
   <div id="app">
     
     <Header />
-    <Main />
+    <Main :comics="comics"/>
     <Footer />
   </div>
 </template>
@@ -26,10 +26,7 @@ export default {
 
     }
   },
-  created(){
-    console.log(this.comics);
-
-  },
+  
 }
 </script>
 
