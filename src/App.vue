@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     
-    <Header />
+    <Header :navList ="nav"/>
     <Main :comics="comics"/>
     <Footer />
   </div>
@@ -23,6 +23,48 @@ export default {
   data: function(){
     return{
       comics: ComicJson,
+      nav:[
+        {
+          id:0,
+          name:'Characters',
+          link: '/characters'
+        },
+        {
+          id:1,
+          name:'Comics',
+          link: '/comics'
+        },
+        {
+          id: 2,
+          name: 'Movies',
+          link: '/movies'
+        },
+        {
+          id: 3,
+          name: 'TV',
+          link: '/tv'
+        },
+        {
+          id: 4,
+          name: 'Games',
+          link: '/games'
+        },
+        {
+          id: 5,
+          name: 'Videos',
+          link: '/videos'
+        },
+        {
+          id: 6,
+          name: 'News',
+          link: '/news'
+        },
+        {
+          id: 7,
+          name: 'Shop',
+          link: '/shop'
+        }
+      ]
 
     }
   },
@@ -30,13 +72,6 @@ export default {
 }
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="sass">
+    @import './style/app.sass'
 </style>
