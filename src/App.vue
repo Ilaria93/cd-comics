@@ -3,7 +3,7 @@
     
     <Header :navList ="nav"/>
     <Main :comics="comics"/>
-    <Footer />
+    <Footer :blueBar ="footerBlue" />
   </div>
 </template>
 
@@ -63,6 +63,24 @@ export default {
           id: 7,
           name: 'Shop',
           link: '/shop'
+        }
+      ],
+      footerBlue:[
+        {
+        img:'https://www.dccomics.com/sites/all/themes/dc_comics_bp/images/buy-bar-DCUI.svg',
+        name: 'Digital comics'
+        },
+        {
+        img:'https://www.dccomics.com/sites/all/themes/dc_comics_bp/images/buy-bar-DCshop.svg',
+        name: 'Dc merchandise'
+        },
+        {
+        img: 'https://www.dccomics.com/sites/all/themes/dc_comics_bp/images/buy-bar-subscription.svg',
+        name: 'Subscription'
+        },
+        {
+        img: 'https://www.dccomics.com/sites/all/themes/dc_comics_bp/images/buy-bar-locator.svg',
+        name: 'Comic shop locator'
         }
       ]
 

@@ -21,7 +21,7 @@ export default ({
 })
 </script>
 <style scoped lang="sass">
-    @import '../style/app'
+    @import '../style/app.sass'
 
 
 </style>
